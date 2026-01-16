@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import AddBook from './pages/AddBook';
+import BookDetails from './pages/BookDetails';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/add-book" element={<AddBook />} />
+          <Route path="/book/:id" element={<BookDetails />} />
         </Routes>
       </div>
     </div>
