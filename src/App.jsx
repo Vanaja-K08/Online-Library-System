@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import AddBook from './pages/AddBook';
 import BookDetails from './pages/BookDetails';
+import BrowseBooks from './pages/BrowseBooks';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/add-book" element={<AddBook />} />
           <Route path="/book/:id" element={<BookDetails />} />
+          <Route path="/books/:category" element={<BrowseBooks />} />
         </Routes>
       </div>
     </div>
