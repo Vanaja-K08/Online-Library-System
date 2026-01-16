@@ -15,7 +15,9 @@ function NotFound() {
         Invalid URL: <strong>{location.pathname}</strong>
       </p>
 
-     
+      <Link to="/" className="btn btn-primary mt-3">
+        Go Back to Home
+      </Link>
     </div>
   );
 }
