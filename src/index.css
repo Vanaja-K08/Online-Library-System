@@ -1,4 +1,6 @@
-/* Page headings */
+ @import "tailwindcss";
+ 
+ /* Page headings */
 .page-title {
   font-weight: bold;
   color: #2c3e50;
