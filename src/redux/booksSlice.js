@@ -1,0 +1,16 @@
+import { createSlice } from "@reduxjs/toolkit";
+import booksData from "../data/dummyBook";
+
+// Redux slice to manage books state
+const booksSlice = createSlice({
+  name: "books",
+  initialState: booksData,
+  reducers: {
+    addBook: (state, action) => {
+      state.unshift(action.payload); // add at beginning
+    },
+  },
+});
+
+export const { addBook } = booksSlice.actions;
+export default booksSlice.reducer;

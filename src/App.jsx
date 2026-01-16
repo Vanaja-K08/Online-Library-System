@@ -1,12 +1,15 @@
 
 import './App.css'
+import Navbar from './components/Navbar'
 
 function App() {
 
   return (
-    <>
-      <h1>Online library</h1>
-    </>
+    <div className="library-bg">
+      <div className="library-overlay">
+        <Navbar />
+      </div>
+    </div>
   )
 }
 
