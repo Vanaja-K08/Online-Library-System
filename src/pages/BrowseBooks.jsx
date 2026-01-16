@@ -18,7 +18,11 @@ function BrowseBooks() {
     <div className="container mt-4">
       <h2>{category} Books</h2>
 
-     
+      <input
+        className="form-control mb-3"
+        placeholder="Search by title or author"
+        onChange={(e) => setSearch(e.target.value)}
+      />
 
       <div className="row">
         {filteredBooks.map((book) => (
