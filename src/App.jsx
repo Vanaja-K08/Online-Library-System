@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import AddBook from './pages/AddBook';
 import BookDetails from './pages/BookDetails';
 import BrowseBooks from './pages/BrowseBooks';
+import NotFound from './pages/NotFound';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/add-book" element={<AddBook />} />
           <Route path="/book/:id" element={<BookDetails />} />
           <Route path="/books/:category" element={<BrowseBooks />} />
+           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>
