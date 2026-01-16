@@ -14,11 +14,11 @@ function App() {
       <div className="library-overlay">
         <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add-book" element={<AddBook />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/add-book" element={<AddBook />} />
           <Route path="/book/:id" element={<BookDetails />} />
           <Route path="/books/:category" element={<BrowseBooks />} />
-           <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>

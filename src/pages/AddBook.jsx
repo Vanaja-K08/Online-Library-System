@@ -75,8 +75,8 @@ function AddBook() {
           <option>Fiction</option>
           <option>Non-Fiction</option>
           <option>Sci-Fi</option>
-           <option>Biography</option>
-            <option>History</option>
+          <option>Biography</option>
+          <option>History</option>
         </select>
 
         <textarea
